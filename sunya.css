@@ -1,0 +1,36 @@
+ .scrollmenu {
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            overflow: scroll;
+            background-color:rgb(8, 143, 143);
+            white-space: nowrap;
+        }
+        .scrollmenu a{
+            display: inline;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            border-right: 1px solid black;
+            text-decoration: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+           
+        }
+        .scrollmenu a:hover {
+            background-color: azure;
+        }
+        .active {
+            background-color: white;
+            **TO DO**
+
+        }
+        .scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+.topbar{
+    background-color: powderblue;
+    color: black;
+    padding: 0.1px;
+    top:10%;
+}

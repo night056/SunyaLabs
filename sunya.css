@@ -3,8 +3,11 @@
             margin: 0px;
             padding: 10px;
             overflow: scroll;
-            background-color:rgb(8, 143, 143);
+            background-color:rgb(150, 222, 219);
             white-space: nowrap;
+            
+           
+           
         }
         .scrollmenu a{
             display: inline;
@@ -13,24 +16,13 @@
             padding: 20px;
             border-right: 1px solid black;
             text-decoration: none;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-           
         }
         .scrollmenu a:hover {
-            background-color: azure;
+            background-color: gray;
         }
-        .active {
-            background-color: white;
-            **TO DO**
-
+        .active{
+            background-color:darkcyan;
         }
         .scrollmenu::-webkit-scrollbar {
     display: none;
-}
-.topbar{
-    background-color: powderblue;
-    color: black;
-    padding: 0.1px;
-    top:10%;
 }

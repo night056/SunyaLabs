@@ -1,54 +1,201 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
-        <title>Home</title>
-        <style>
-            .tab{
-                tab-size: 2;
-            }
-        </style>
-        <link rel="stylesheet" type="text/css" href="sunya.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>computational resouces</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="sunya.css">
     </head>
     <body>
-        <div class="topbar">
-            <center><h1>SUNYA LABS</h1></center>
+        <div id="header">
+        <h1>Computational Resouces</h1>
+    
         </div>
-         <div class="scrollmenu">
-                <a class="active" href="homes.html">Home</a>
-              <a href="">Computational Resources</a>
-              <a href="">People</a>
-              <a href="">Interns</a>
-              <a href="">Student Projects</a>
-              <a href="">Funded R&D Projects </a>
-              <a href="CS.html">Consultancy Services</a>
-              <a href="events.html">Events</a>
-              <a href="workshop.html">Workshops</a>
-              <a href="course.html">Courses</a>
-             <a href="call.html">Call for Interns</a>
-          </div>
-        <hr>
-        <img src="./sunya1.jpg" width="100%">
-        <br>
-        <br>
-            <h3>ABOUT:</h3>
-        <p><b>The Sunya Lab, part of the Centre for Advanced Computing and Communication at RSET, is dedicated to conducting fundamental research in the vast fields of computer science and artificial intelligence. The lab is firmly committed to taking a leading role in both pioneering new theoretical approaches and developing applications that can make a significant societal impact.
-            <br><br>
-            Currently, Sunya Lab's research activities are concentrated in three primary domains:
-            <br>
-            <br>
-&emsp;&emsp;1. Artificial Intelligence & Data Science: In this research area, the lab strives to comprehend and create systems, whether living organisms or artificial constructs, that possess the ability for intelligent reasoning, perception, and behavior. Specific research endeavors encompass core AI, computational biology, computer graphics, computer vision, human language technology, machine learning, medical informatics, robotics, and the semantic web.
-            <br>
-            <br>
-&emsp;&emsp;2. Systems: Sunya Lab's research in this domain seeks to uncover fundamental principles, models, metrics, and tools that apply to computer systems, encompassing both hardware and software aspects. This research delves into areas such as compilers, computer architecture and chip design, operating systems, programming languages, High Performance  & Distributed Computing and computer networks.
-            <br>
-            <br>
-&emsp;&emsp;3. Theory: Within the realm of theory, Sunya Lab investigates the mathematical aspects of computation and the implications they carry. Specific research areas encompass algorithms, complexity theory, computational geometry, cryptography, distributed computing, information security, and quantum computing.
-            <br>
-            <br>
-The lab actively encourages student involvement in its research projects, offering opportunities for undergraduates to participate through internship programs and providing research assistantships for graduate students.
-<br>
-<br>
-In addition to that the lab provides High Performance Computing support to other fields of Engineering and Sciences to accomplish their computational objectives. 
-            </b></p>
+        
+        <!--
+            MADE WITH <3 AND JAVASCRIPT
+        -->
+        <H3>HPC FECILITY</H3>
+        <p>
+        
+High Performance Computing (HPC) refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business.
+The HPC system at RSET has a computing power of upto 6.1 TFLOPS, catering to the ever-increasing demands of high performance computing for scientific and engineering research at the college.
+
+The cluster consists of state-of-the-art computing systems connected by a powerful high- speed Infiniband switch and cables, with sophisticated software packages. It consists of four computing nodes, one head node and one storage node. The centre will have the support from HPC-Now, which is an HPC consultancy services company based in Barcelona, Spain. They have offered their expertise and knowledge-sharing in setting up and managing this center through their efficient supercomputer administrative suite, called sNow.
+        </p>
+        <h3>HPC cluster architecture</h3>
+         <img src=".\hpc.jpg" alt="image of cluster" align="middle">
+        
+        
+    <h1>HPC Cluster Specification</h1>
+    <table border="1">
+        <tr>
+            <th>Node Type</th>
+            <th>Processor</th>
+            <th>RAM</th>
+            <th>HDD</th>
+            <th>Storage</th>
+            <th>Clock Speed</th>
+        </tr>
+        <tr>
+            <td>Head Node (sNow Server)</td>
+            <td>Intel Xeon Processor E5-2620 v4 (8 cores) * 2</td>
+            <td>64 GB</td>
+            <td>500 GB*2</td>
+            <td></td>
+            <td>2.1 GHz</td>
+        </tr>
+        <tr>
+            <td>Storage Node</td>
+            <td>Intel Xeon Processor E5-2620 v4 (8 cores) * 2</td>
+            <td>64 GB</td>
+            <td>800 GB</td>
+            <td>5 * 2 TB</td>
+            <td>2.1 GHz</td>
+        </tr>
+        <tr>
+            <td>Computing Node with GPU (1 No)</td>
+            <td>Intel Xeon E5-2690 v4 (14 cores) * 2</td>
+            <td>128 GB</td>
+            <td>500 GB SSD</td>
+            <td></td>
+            <td>2.6 GHz</td>
+        </tr>
+        <tr>
+            <td>Computing Nodes (3 Nos)</td>
+            <td>Intel Xeon E5-2690 v4 (14 cores) * 2</td>
+            <td>128 GB</td>
+            <td>500 GB SSD</td>
+            <td></td>
+            <td>2.6 GHz</td>
+        </tr>
+    </table>
+
+    <h2>Infiniband Switch</h2>
+    <p>MSX6015F-1SFS--- MellanoxSwitchX®-2 based FDR InfiniBand 1U Switch, 18 ports</p>
+
+    <h2>Chassis & Server Models</h2>
+    <ul>
+        <li>HP Apollo r2200 12LFF CTO Chassis</li>
+        <li>HP Apollo r2600 24SFF CTO Chassis</li>
+        <li>HP ProLiant XL190r Gen9 CTO Svr</li>
+        <li>HP ProLiant XL170r Gen9 CTO Svr</li>
+    </ul>
+    <h2>HPC Applications</h2>
+
+    <table border="1">
+        <tr>
+            <th>Application</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>GROMACS</td>
+            <td>It is a versatile package to perform molecular dynamics, i.e., simulate the Newtonian equations of motion for systems with hundreds to millions of particles.</td>
+        </tr>
+        <tr>
+            <td>OpenFOAM</td>
+            <td>Free open-source CFD software to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to acoustics, solid mechanics and electromagnetics.</td>
+        </tr>
+        <tr>
+            <td>WRF</td>
+            <td>The Weather Research and Forecasting (WRF) Model is a weather prediction system designed for both atmospheric research and operational forecasting needs.</td>
+        </tr>
+        <tr>
+            <td>ABINIT</td>
+            <td>It is an open-source suite of programs for materials science, distributed under the GNU General Public License.</td>
+        </tr>
+        <tr>
+            <td>mpiBlast</td>
+            <td>It is a parallel implementation of NCBI BLAST. Allows multi-threading in more than one node. Application: Bioinformatics</td>
+        </tr>
+        <tr>
+            <td>Quantum Espresso</td>
+            <td>It is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.</td>
+        </tr>
+        <tr>
+            <td>Application Libraries</td>
+            <td>
+                <ul>
+                    <li>OpenMP is used for shared memory multiprocessing programming.</li>
+                    <li>MPI is used for message-passing multiprocessing programming.</li>
+                    <li>CUDA technology is used for GPU computing and parallelizing tasks in Nvidia GPUs.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+        <a href=".\Getting_Started_With_Serial_And_Parallel_MATLAB.pdf">Matlab Parallel Server Minimal User Guide</a>
+        <h3>MINI FAB LAB</h3>
+        <p>Mini Fab Lab has been setup in RSET inside Sunya Lab in June 2017. It has been up and running . RSET Sunya Fab Lab has  3D printer, Laser Engraver, Vinyl Cutter, Sand Blaster and an Electronic Work Station.
+
+Regular weekly training program is conducting for students. 40 interested candidates from all the departments are participating in this. Final year students have immense use with 3D printer and they are using it effectively. Some of the student projects are Prosthetic Hand, Pen Plotter and Morphing Wings. Before the beginning of semester, training program for faculty members and technical staffs were conducted. Fab Lab hosted an FDP conducted by Kerala Start Up Mission from 23rd oct 2017 to 26 th oct 2017. Fab Lab together with IEDC and RSET incubation cell can inspire and facilitate students for implementing innovative ideas.</p>
+        <h3>MINI FAB LAB EQUIPMENTS</h3>
+        <p>Laser Cutter
+Laser cutters are among the easiest machines to use in a Fab Lab. A laser cut engraves or cuts a piece of wood in the shape you decided on the computer. The precision is usually very good: less than 0.02mm. Other materials are allowed such as acrylic, fabric, rubber, leather… Laser cutters will give your Fab Lab a nice burnt wood smell, but you will also need to invest in a ventilation system. Cost: $9,995.(laser-cutter + Atmos Exhaust System)</p>
+  <img src="./lz1.jpg" alt="labequipment" align=center>
+  <img src="/lz.jpg" alt="labquipment" align="center">
+        <h3>CNC ROUTER</h3>
+        <p>A ShopBot is a CNC router that is excellent for woodworking, manufacturing, prototyping, creating furnitures, music instruments, signs or boats… They come in many sizes and features. You will need a dust collector to go with. Cost: $22,158 (ShopBot Closed Loop + Dust Collector)</p>
+        <img src="/cnc1.jpg" alt="labquipment" align="center">
+        <img src="/cnc.jpg" alt="labquipment" align="center">
+        <h3>3D printer</h3>
+        <p>3D printers are very useful machines to own in a Fab Lab. Manufacturers are now proposing 3D printers for small prices. Home printers like Makerbot or Ultimaker are more and more used in Fab Labs because they are now more reliable and precise.The 3D printer will create your design layer after layer. Like these shoes for example:</p>
+        <img src="/3D1.jpg" alt="labquipment" align="center">
+        <img src="/3D.jpg" alt="labquipment" align="center">
+
+        
+        
+        <h3>A MILLING MEACHINE</h3>
+        <p>
+            At the difference of 3D printers that work by adding material, Milling machines subtracts material. They can make a great variety of prototypes and products such as cases, jewelry, light metal mold, 
+        </p>
+        <img src="./ML1.jpg" alt="labquipment" align="center">
+        <img src="./ML.jpg" alt="labquipment" align="center">
+        <h3>VINYL CLUTTER</h3>
+        <p1>Vinyl cutters are perfect for making signs, stickers, apparel decoration or vehicle graphics.</p1>
+         <img src="./vc.jpg" alt="labquipment" align="center">
+         <img src="./vc1.jpg" alt="labquipment" align="center">
+        
+<H3>TRAINING UNDER MINI FABLAB</H3>
+        <ol>
+        <li>Basic Electronics - Soldering, PCB Design and Fabrication, Circuit Debugging - 3 days.</li>
+        <li>Embedded System Courses - Atmel Controllers, Hardware Interfacing, Sensors, Peripherals - 5 Days.</li>
+        <li>Project development using Arduino and Raspberry Pi - 1 Week.</li>
+        <li>Project training on IoT Platforms - ESP8266, PLC Communication, POE Modules, Arduino + ENC28J60 - 2 Weeks.</li>
+        <li>Electronic Product Design - 2 Days.</li>
+        <li>Design and Prototyping courses - 3D Printing, Screen Printing, Casting and Molding.</li>
+        <li>Machine training - 1 Week.</li>
+        <li>Fab Academy Training - 6-month long intense training program exclusively for makers. This will happen once in every year. This will be provided only at the Fablabs in Trivandrum and Kochi.</li>
+    </ol>
+        <h3>Cloud Computing fecility</h3>
+        <p>Sunya Labs has set up a Cloud computing research cluster using OpenStack cloud middleware.
+It is an OpenStack minimal three node architecture as given below.</p>
+        <img src="./cl.jpg" alt="labquipment" align="center">
+     <p>The above diagram  shows the OpenStack architecture we have implemented at RSET. We have used OpenStack Juno for our implementation. It has a Network Node, Controller Node, three Compute nodes and few on-site Client nodes. All machines run Ubuntu 14.04 as the Operating System</p>
+        
     </body>
 </html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
